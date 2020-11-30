@@ -11,6 +11,11 @@ apt-get install \
     network-manager \
     nftables
 
+apt-get autoremove --purge iptables
+apt-get autoremove --purge ifupdown
+ln -s /usr/lib/systemd/system/nftables.service /etc/systemd/system/sysinit.target.wants/nftables.service
+
+echo > /etc/NetworkManager/NetworkManager.conf
 apt-get update
 apt-get upgrade
 
