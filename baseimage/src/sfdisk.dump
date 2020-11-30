@@ -1,0 +1,8 @@
+label: dos
+label-id: 0xf7f1521b
+device: /builder/debian.img
+unit: sectors
+sector-size: 512
+
+start=2048,size=1048576,type=b,bootable
+start=1052672,size=5242880,type=83

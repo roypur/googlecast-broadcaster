@@ -1,0 +1,2 @@
+UUID=__ROOT_UUID__ / ext4 defaults 0 1
+UUID=__FIRMWARE_UUID__ /boot/firmware vfat defaults 0 1

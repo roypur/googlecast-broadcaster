@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+mv /boot/firmware/config.txt /boot/firmware/config-post.txt
+sed --in-place --regexp-extended 's/arm_64bit=[0-9]+//g' /boot/firmware/config-post.txt
+
+echo 'arm_64bit=1' > /boot/firmware/config.txt
+cat /boot/firmware/config-post.txt >> /boot/firmware/config.txt
+rm /boot/firmware/config-post.txt
+
+sed --in-place --regexp-extended 's#root=[a-zA-Z0-9/=]+#root=UUID=__ROOT_UUID__#g' /boot/firmware/cmdline.txt

@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone='no'?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+    <name>googlecast</name>
+    <service>
+        <type>_googlecast._tcp</type>
+        <port>8009</port>
+        <host-name>6f29c6c2e8e522b9019c8e52ba1cf5e5f958d43e.local</host-name>
+        <txt-record>id=eef198a7d1961c509f01237b668aa76e</txt-record>
+        <txt-record>cd=014702AECEB5426F8213EDA576783245</txt-record>
+        <txt-record>md=TPM191E</txt-record>
+        <txt-record>fn=Philips-TV-Stue</txt-record>
+        <txt-record>ve=05</txt-record>
+        <txt-record>ic=/setup/icon.png</txt-record>
+        <txt-record>ca=460805</txt-record>
+        <txt-record>st=0</txt-record>
+        <txt-record>bs=FA8F744606D5</txt-record>
+        <txt-record>nf=1</txt-record>
+    </service>
+</service-group>
